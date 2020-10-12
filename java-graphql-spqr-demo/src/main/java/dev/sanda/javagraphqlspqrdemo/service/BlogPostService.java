@@ -25,7 +25,7 @@ public class BlogPostService {
 
     @GraphQLMutation(name = "createBlogPost")
     public BlogPost createBlogPost(@GraphQLArgument(name = "authorId") Long authorId,
-                                   @GraphQLArgument(name = "input") BlogPost input){
+                                   @GraphQLArgument(name = "input") BlogPost input) {
         Author author = authorRepository
                 .findById(authorId)
                 .orElseThrow(() ->

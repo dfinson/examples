@@ -23,12 +23,12 @@ public class AuthorService {
     private AuthorRepository authorRepository;
 
     @GraphQLMutation(name = "createAuthor")
-    public Author createAuthor(@GraphQLArgument(name = "author") Author input){
+    public Author createAuthor(@GraphQLArgument(name = "author") Author input) {
         return authorRepository.save(input);
     }
 
     @GraphQLQuery(name = "authorById")
-    public Author getAuthorById(@GraphQLArgument(name = "id") Long id){
+    public Author getAuthorById(@GraphQLArgument(name = "id") Long id) {
         return authorRepository
                 .findById(id)
                 .orElseThrow(() ->

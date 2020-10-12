@@ -15,14 +15,14 @@ import javax.annotation.PostConstruct;
 public class GraphQLProviderSPQR {
 
     @Autowired
-    public GraphQLProviderSPQR(AuthorService authorService, BlogPostService blogPostService){
+    public GraphQLProviderSPQR(AuthorService authorService, BlogPostService blogPostService) {
         initGraphQLServices(authorService, blogPostService);
     }
 
     private GraphQL graphQL;
 
     @Bean
-    public GraphQL graphQL(){
+    public GraphQL graphQL() {
         return graphQL;
     }
 
