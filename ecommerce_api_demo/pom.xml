@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>dev.sanda</groupId>
-    <artifactId>ecommerce_api</artifactId>
-    <version>1</version>
-    <name>ecommerce_api</name>
+    <artifactId>ecommerce_api_demo</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>ecommerce_api_demo</name>
     <description>Demo project for Apifi</description>
 
     <properties>
@@ -20,22 +20,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
-
-        <dependency>
             <groupId>dev.sanda</groupId>
             <artifactId>apifi</artifactId>
             <version>0.0.5.2</version>
-        </dependency>
-
-        <dependency>
-
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <scope>runtime</scope>
-            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>com.h2database</groupId>
@@ -43,25 +30,9 @@
             <scope>runtime</scope>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-configuration-processor</artifactId>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.junit.vintage</groupId>
-                    <artifactId>junit-vintage-engine</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
     </dependencies>
 
